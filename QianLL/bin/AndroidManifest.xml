@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.qianll"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/qian1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.example.qianll.FirstActivity"
+            android:label="钱小姐哈哈">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.qianll.SecondActivity"
+            android:label="傻姐姐哈哈">
+            <intent-filter>
+                
+            </intent-filter>
+            
+        </activity>
+        
+        <service android:name="com.example.qianll.MyService"
+            android:exported="true"
+            android:process=":remote">
+            
+        </service>
+        
+     
+        
+    </application>
+    
+
+</manifest>
